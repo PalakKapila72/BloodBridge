@@ -1,7 +1,8 @@
 
 import { useState } from 'react'
+import { API_BASE_URL } from './config'
 
-const API_URL = 'http://localhost:5000/api/shortest-path'
+const API_URL = `${API_BASE_URL}/api/shortest-path`
 
 // Sample road network for testing Dijkstra.
 const SAMPLE_EDGES = [

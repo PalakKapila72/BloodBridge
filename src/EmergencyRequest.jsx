@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import { API_BASE_URL } from './config'
 
-const API_DISPATCH_URL = 'http://localhost:5000/api/emergency-dispatch'
+const API_DISPATCH_URL = `${API_BASE_URL}/api/emergency-dispatch`
 const BLOOD_GROUPS = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-']
 
 const LOCATION_PRESETS = [

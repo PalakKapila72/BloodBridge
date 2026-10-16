@@ -3,10 +3,11 @@ import { useState } from 'react'
 import MapView from './MapView'
 import ShortestPath from './ShortestPath'
 import EmergencyRequest from './EmergencyRequest'
+import { API_BASE_URL } from './config'
 import './App.css'
 
 const BLOOD_GROUPS = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-']
-const API_URL = 'http://localhost:5000/api/donors'
+const API_URL = `${API_BASE_URL}/api/donors`
 
 function App() {
   const [bloodGroup, setBloodGroup] = useState('O+')

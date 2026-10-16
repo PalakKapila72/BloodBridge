@@ -15,8 +15,9 @@ import 'leaflet/dist/leaflet.css';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+import { API_BASE_URL } from './config';
 
-const API_URL = 'http://localhost:5000/api/donors';
+const API_URL = `${API_BASE_URL}/api/donors`;
 const ROUTING_URL = 'https://router.project-osrm.org/route/v1/driving';
 const GEOCODING_URL = 'https://nominatim.openstreetmap.org/search';
 
